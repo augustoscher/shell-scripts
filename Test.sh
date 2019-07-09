@@ -16,9 +16,9 @@
 MINHAVARIAVEL="Oi sou uma variavel"
 
 clear
-echo "========= Primeiro Script ========"
+echo "====== Primeiro Script ======"
 echo ""
 echo "Conteudo da minha variavel: $MINHAVARIAVEL"
 echo ""
-echo "Fim do Script"
+echo "====== Fim do Script ======"
 
