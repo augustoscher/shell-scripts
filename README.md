@@ -66,6 +66,14 @@ Ordenar arquivos:
 > sort -r alunos.txt (reverse)  
 > sort alunos.txt -k 3 (especifíca coluna)  
 
+Listar valores únicos:  
+> sort alunos.txt | uniq  
+> sort alunox.txt | uniq -u (mostra só os que apareceram 1x)  
+> sort alunos.txt | uniq -c (conta a qtd de vezes que cada repetido aparece)  
+
+Contar valores únicos e ordenar pelo valor que mais vezes aparece:  
+> sort alunos.txt | uniq -c | sort  
+
 
 
 
