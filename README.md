@@ -32,3 +32,44 @@ Mostrar caracteres especiais:
 
 Cat de tras pra frente:  
 > tac heroku.yml  
+
+Mostra as ultimas linhas de um arquivo:  
+> tail heroku.yml
+
+Mostra as últimas linhas de um arquivo passando qtd:  
+> tail -n 2 heroku.yml  
+
+Mostra as primeiras linhas de um arquivo:  
+> head arquivo.txt
+
+Mostra as primeiras linhas de arquivo passando qtd:
+> head -n 4 test.txt
+
+Contar tamanho de linhas/palavras/caracteres:  
+> wc test
+
+Contar separadamente linhas/palavras/caracteres/bytes:    
+> wc -l test  
+> wc -w test  
+> wc -m test  
+> wc -c test  
+
+Contar vários arquivos(retorna de todos os arquivos e o total):  
+> wc alunos*
+
+Contar a qtd de palavras:  
+Pipe faz a saída de um comando virar entrada de outro:  
+> tail -n5 test |wc -w
+
+Ordenar arquivos:  
+> sort alunos.txt  
+> sort -r alunos.txt (reverse)  
+> sort alunos.txt -k 3 (especifíca coluna)  
+
+
+
+
+
+
+
+
