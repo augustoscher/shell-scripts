@@ -147,7 +147,7 @@ Subsitutir palavas:
 ##### MORE/LESS
 > more arquivolongo.txt  
 > less arquivolongo.txt  
-  
+> cat -A arquivolongo.txt | less   
 
   
 
