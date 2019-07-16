@@ -126,7 +126,28 @@ Procurar dentro de diretório determinado texto:
 Procurar pelo texto e mostrar somente o nome do arquivo:  
 > grep -rl Ana *  
 
+Imprime n linhas após o grep dar match no texto:  
+> grep -A2 Ana alunos2.txt  
 
+Imprime n linhas antes ao match do grep no texto:  
+> grep -B3 Ana alunos2.txt  
+
+
+##### SED  
+Faz filtro e transforma o conteúdo. Parecido com TR.  
+  
+Remove linhas:  
+> sed '1,3 d' alunos2.txt  
+> sed '/Carlos/d' alunos2.txt  
+
+Subsitutir palavas:  
+> sed alunos2.txt | sed 's/Paulo/Joao/'  
+
+
+
+
+
+  
 
 
 
