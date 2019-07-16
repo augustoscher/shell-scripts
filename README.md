@@ -110,6 +110,13 @@ Diferença entre dois arquivos:
 > diff alunos.txt alunos3.txt  
 > diff alunos2.txt alunos3.txt  
 
+### Procurar string dentro de um texto (grep)  
+
+grep basico:  
+> grep Claudia alunos2.txt  
+
+filtrando retorno de outro comando:  
+> docker ps -a | grep mongo  
 
 
 
