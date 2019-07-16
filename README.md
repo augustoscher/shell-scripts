@@ -114,6 +114,24 @@ Filtrando uma frase:
 Filtrando retorno de outro comando:  
 > docker ps -a | grep mongo  
 
+Ignore case(deixa mais pesado):  
+> docker ps -a | grep -i MONGO  
+
+Conta ocorrências:  
+> grep Ana alunos2.txt  
+
+Procurar dentro de diretório determinado texto:  
+> grep -r Ana * (entra recursivamente nos diretórios dentro do diretório atual e procura pelo texto)  
+
+Procurar pelo texto e mostrar somente o nome do arquivo:  
+> grep -rl Ana *  
+
+
+
+
+
+
+
 
 
 
