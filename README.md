@@ -131,8 +131,8 @@ Imprime n linhas após o grep dar match no texto:
 
 Imprime n linhas antes ao match do grep no texto:  
 > grep -B3 Ana alunos2.txt  
-
-
+  
+  
 ##### SED  
 Faz filtro e transforma o conteúdo. Parecido com TR.  
   
@@ -142,6 +142,14 @@ Remove linhas:
 
 Subsitutir palavas:  
 > sed alunos2.txt | sed 's/Paulo/Joao/'  
+  
+  
+##### MORE/LESS
+> more arquivolongo.txt  
+> less arquivolongo.txt  
+  
+
+  
 
 
 
