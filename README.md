@@ -1,5 +1,7 @@
 # shell-scripts
 
+### Basics Commands
+
 Exibe qual shell está sendo usado:  
 > echo $0 OU echo $SHELL  
 
@@ -16,6 +18,9 @@ Todos apenas na minha sessão:
 
 Mais completo: 
 > ps axu  
+
+
+### File Manipulation
 
 Print na saída padrão:  
 Normal:  
@@ -74,7 +79,29 @@ Listar valores únicos:
 Contar valores únicos e ordenar pelo valor que mais vezes aparece:  
 > sort alunos.txt | uniq -c | sort  
 
+Descobrir o que o comando faz:  
+> whatis tr  
 
+Traduzir ou deletar caracteres de uma string:  
+> cat alunos3.txt |tr a e (troca a por e)  
+
+Trocar letras minúscolas por maiúsculas:  
+> cat alunos3.txt |tr a-z A-Z  
+
+Trocar espaços por tab:  
+> cat alunos3.txt |tr ' ' '\t'  
+
+Cortar caracteres de uma string:  
+> cat alunos2.txt | cut -c1-5  
+
+Cortar caracteres definindo caracteres:  
+> cat alunos2.txt | cut -c1,2,3  
+> cat alunos2.txt | cut -c1,2,3,7-  
+
+
+
+
+ 
 
 
 
