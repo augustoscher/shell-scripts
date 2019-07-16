@@ -108,6 +108,8 @@ Exibir strings considerando campos:
 
 Diferença entre dois arquivos:  
 > diff alunos.txt alunos3.txt  
+> diff alunos2.txt alunos3.txt  
+
 
 
 
