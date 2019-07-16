@@ -98,6 +98,19 @@ Cortar caracteres definindo caracteres:
 > cat alunos2.txt | cut -c1,2,3  
 > cat alunos2.txt | cut -c1,2,3,7-  
 
+Exibir strings considerando campos:  
+> cat alunos2.txt | cut -d " " -f1,3    
+> cat alunos2.txt | cut -d " " -f1  
+> tail /etc/passwd | cut -d":" -f1,2,3,4,5  
+
+
+### Comparar arquivos
+
+Diferença entre dois arquivos:  
+> diff alunos.txt alunos3.txt  
+
+
+
 
 
 
