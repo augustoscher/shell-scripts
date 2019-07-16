@@ -1,29 +1,29 @@
 # shell-scripts
 
-### Basics Commands
+#### Basics Commands
 
 Exibe qual shell está sendo usado:  
 > echo $0 OU echo $SHELL  
 
-Listar pacotes instalados:  
-Todos:  
+Listar todos pacotes instalados:  
 > sudo dpkg -l 
-
-Filtro:  
 > sudo dpkg -l | grep vim
 
-Listar processos:  
-Todos apenas na minha sessão:
+Processos todos apenas na minha sessão:  
 > ps  
-
-Mais completo: 
 > ps axu  
 
+Desecrição do comando:  
+> whatis tr  
 
-### File Manipulation
+Onde está instalado:  
+> whereis docker-compose  
 
+
+#### File Manipulation
+
+##### CAT  
 Print na saída padrão:  
-Normal:  
 > cat heroku.yml  
 
 Enumerar linhas excetos em brancas:  
@@ -38,18 +38,17 @@ Mostrar caracteres especiais:
 Cat de tras pra frente:  
 > tac heroku.yml  
 
+
+##### TAIL/HEAD
 Mostra as ultimas linhas de um arquivo:  
 > tail heroku.yml
-
-Mostra as últimas linhas de um arquivo passando qtd:  
 > tail -n 2 heroku.yml  
 
 Mostra as primeiras linhas de um arquivo:  
 > head arquivo.txt
-
-Mostra as primeiras linhas de arquivo passando qtd:
 > head -n 4 test.txt
 
+##### WC
 Contar tamanho de linhas/palavras/caracteres:  
 > wc test
 
@@ -60,12 +59,12 @@ Contar separadamente linhas/palavras/caracteres/bytes:
 > wc -c test  
 
 Contar vários arquivos(retorna de todos os arquivos e o total):  
-> wc alunos*
+> wc alunos*  
 
-Contar a qtd de palavras:  
 Pipe faz a saída de um comando virar entrada de outro:  
-> tail -n5 test |wc -w
+> tail -n 5 test | wc -w  
 
+##### SORT  
 Ordenar arquivos:  
 > sort alunos.txt  
 > sort -r alunos.txt (reverse)  
@@ -77,18 +76,13 @@ Listar valores únicos:
 > sort alunos.txt | uniq -c (conta a qtd de vezes que cada repetido aparece)  
 
 Contar valores únicos e ordenar pelo valor que mais vezes aparece:  
-> sort alunos.txt | uniq -c | sort  
+> sort alunos.txt | uniq -c | sort   
 
-Descobrir o que o comando faz:  
-> whatis tr  
 
+##### TR/CUT  
 Traduzir ou deletar caracteres de uma string:  
-> cat alunos3.txt |tr a e (troca a por e)  
-
-Trocar letras minúscolas por maiúsculas:  
+> cat alunos3.txt |tr a e
 > cat alunos3.txt |tr a-z A-Z  
-
-Trocar espaços por tab:  
 > cat alunos3.txt |tr ' ' '\t'  
 
 Cortar caracteres de uma string:  
@@ -104,19 +98,24 @@ Exibir strings considerando campos:
 > tail /etc/passwd | cut -d":" -f1,2,3,4,5  
 
 
-### Comparar arquivos
-
+##### DIFF
 Diferença entre dois arquivos:  
 > diff alunos.txt alunos3.txt  
 > diff alunos2.txt alunos3.txt  
 
-### Procurar string dentro de um texto (grep)  
 
-grep basico:  
+##### GREP
+Básico:  
 > grep Claudia alunos2.txt  
 
-filtrando retorno de outro comando:  
+Filtrando uma frase:  
+> grep "Meu nome" alunos2.txt  
+
+Filtrando retorno de outro comando:  
 > docker ps -a | grep mongo  
+
+
+
 
 
 
