@@ -14,16 +14,17 @@
 #########################################################################
 
 clear
-echo "Installing ZSH Shell ======I"
+echo "Installing Zsh shell"
 echo ""
 sudo apt install zsh
 echo ""
-echo "ZSH Shell install finished - vesion: "
+echo "Zsh installed vesion"
 zsh --version
 echo ""
-echo "Set ZSH as default Shell"
+echo "Setting Zsh as default shell"
 chsh -s $(which zsh)
 echo ""
 echo "Done!"
+echo "You should restart your OS"
 
 
