@@ -5,6 +5,12 @@
 Exibe qual shell está sendo usado:  
 > echo $0 OU echo $SHELL  
 
+Exibe shell disponíveis:  
+> cat /etc/shells  
+
+Setar shell padrão:  
+> chsh -s $(which zsh)  
+
 Listar todos pacotes instalados:  
 > sudo dpkg -l 
 > sudo dpkg -l | grep vim
