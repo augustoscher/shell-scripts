@@ -9,7 +9,10 @@ Exibe shell disponíveis:
 > cat /etc/shells  
 
 Setar shell padrão:  
-> chsh -s $(which zsh)  
+> chsh -s $(which zsh) 
+
+Permissão de executável para .sh:  
+> chmod +x /path/to/yourscript.sh   
 
 Listar todos pacotes instalados:  
 > sudo dpkg -l 
