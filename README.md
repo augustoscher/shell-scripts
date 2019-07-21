@@ -158,6 +158,8 @@ Subsitutir palavas:
 > less arquivolongo.txt  
 > cat -A arquivolongo.txt | less   
 
+#####  
+
   
 
 
