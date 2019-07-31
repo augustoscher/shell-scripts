@@ -189,6 +189,33 @@ data formatada mm/dd/yy
 > date +%D  
 
 
+##### SEQ  
+print de sequencia de numeros:  
+  
+1 a 20:  
+> seq 20  
+  
+5 a 20:  
+> seq 5 20  
+  
+definindo intervalo. começa em 5 e incrementa 2. 
+> seq 5 2 30  
+  
+  
+##### EXPR  
+evalua expressões matemáticas  
+  
+> expr 5 + 2  
+> expr 4 % 2  
+> expr 5 - 1  
+> expr 2 \* 3  
+> expr 8 / 2  
+> expr 10 \* 5 + 2  
+> echo 3 + 2 | bc  
+  
+
+
+
 
 
 
