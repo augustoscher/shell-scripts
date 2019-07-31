@@ -168,6 +168,7 @@ Usado para paginação de arquivos
 ##### FIND  
 Usado para procurar arquivos  
 find - search for files in a directory hierarchy  
+
 details:  
 > man find  
   
