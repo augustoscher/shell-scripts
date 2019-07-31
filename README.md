@@ -13,7 +13,11 @@ Setar shell padrão:
 
 Permissão de executável para .sh:  
 > chmod +x /path/to/yourscript.sh   
-
+  
+an interface to the on-line reference manuals:  
+> man chmod  
+> man cat    
+  
 Listar todos pacotes instalados:  
 > sudo dpkg -l 
 > sudo dpkg -l | grep vim
@@ -154,11 +158,34 @@ Subsitutir palavas:
   
   
 ##### MORE/LESS
+Usado para paginação de arquivos  
+  
 > more arquivolongo.txt  
 > less arquivolongo.txt  
 > cat -A arquivolongo.txt | less   
 
+
+##### FIND  
+Usado para procurar arquivos  
+find - search for files in a directory hierarchy  
+details:  
+> man find  
   
+> find ./ -name examples.txt  
+> find /home -name test.txt  
+> find /home -name *test*  
+
+Executar comando no retorno do find:  
+> find ./ -name *test* -exec ls -l {} \;  
+
+##### DATE  
+date - print or set the system date and time  
+
+data:
+> date  
+
+data formatada mm/dd/yy  
+> date +%D  
 
 
 
