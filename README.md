@@ -213,6 +213,12 @@ evalua expressões matemáticas
 > expr 10 \* 5 + 2  
 > echo 3 + 2 | bc  
   
+  
+##### Executar comandos de maneira sequencial  
+  
+  
+> date ; echo Linux ; ls  
+> 
 
 
 
