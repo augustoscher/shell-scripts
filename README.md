@@ -215,10 +215,15 @@ evalua expressões matemáticas
   
   
 ##### Executar comandos de maneira sequencial  
-  
-  
+    
 > date ; echo Linux ; ls  
-> 
+> ls && echo Linux && date só executa o próximo commando se não ocorreu erro  
+> ls || echo Linux  só executa o segundo se deu erro no primeiro  
+> cd.. ; ls -l executa ls -l e no diretório anterior e posiciona no diretorio anterior  
+> ( cd .. ; ls -l ) executa ls -l no diretório anterior e permanece no dir atual  
+
+
+
 
 
 
