@@ -157,8 +157,13 @@ Subsitutir palavas:
 > more arquivolongo.txt  
 > less arquivolongo.txt  
 > cat -A arquivolongo.txt | less   
-
   
+  
+##### STDIN/STDOUT/STDERR  
+  
+Redirecionar saida padrão para um arquivo:
+> cat alunos3.txt > alunos-temp.txt  
+> date > alunos-temp.txt  
 
 
 
