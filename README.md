@@ -225,11 +225,12 @@ evalua expressões matemáticas
   
 ##### STDIN/STDOUT/STDERR  
   
-Redirecionar saida padrão para um arquivo:
+Redirecionar saida padrão para um arquivo:  
 > cat alunos3.txt > alunos-temp.txt  
 > date > alunos-temp.txt  
-
-
+  
+Concatenar no final do arquivo:  
+> date >> alunos-temp.txt
 
 
 
