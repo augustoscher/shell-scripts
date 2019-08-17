@@ -13,7 +13,11 @@ Setar shell padrão:
 
 Permissão de executável para .sh:  
 > chmod +x /path/to/yourscript.sh   
-
+  
+an interface to the on-line reference manuals:  
+> man chmod  
+> man cat    
+  
 Listar todos pacotes instalados:  
 > sudo dpkg -l 
 > sudo dpkg -l | grep vim
@@ -154,9 +158,69 @@ Subsitutir palavas:
   
   
 ##### MORE/LESS
+Usado para paginação de arquivos  
+  
 > more arquivolongo.txt  
 > less arquivolongo.txt  
 > cat -A arquivolongo.txt | less   
+
+
+##### FIND  
+Usado para procurar arquivos  
+find - search for files in a directory hierarchy  
+
+details:  
+> man find  
+  
+> find ./ -name examples.txt  
+> find /home -name test.txt  
+> find /home -name *test*  
+
+Executar comando no retorno do find:  
+> find ./ -name *test* -exec ls -l {} \;  
+
+##### DATE  
+date - print or set the system date and time  
+
+data:
+> date  
+
+data formatada mm/dd/yy  
+> date +%D  
+
+
+##### SEQ  
+print de sequencia de numeros:  
+  
+1 a 20:  
+> seq 20  
+  
+5 a 20:  
+> seq 5 20  
+  
+definindo intervalo. começa em 5 e incrementa 2. 
+> seq 5 2 30  
+  
+  
+##### EXPR  
+evalua expressões matemáticas  
+  
+> expr 5 + 2  
+> expr 4 % 2  
+> expr 5 - 1  
+> expr 2 \* 3  
+> expr 8 / 2  
+> expr 10 \* 5 + 2  
+> echo 3 + 2 | bc  
+  
+  
+##### Executar comandos de maneira sequencial  
+    
+> date ; echo Linux ; ls  
+> ls && echo Linux && date  //só executa o próximo commando se não ocorreu erro  
+> ls || echo Linux  //só executa o segundo se deu erro no primeiro  
+> cd.. ; ls -l  //executa ls -l e no diretório anterior e posiciona no diretorio anterior  
+> ( cd .. ; ls -l )  //executa ls -l no diretório anterior e permanece no dir atual  
   
   
 ##### STDIN/STDOUT/STDERR  
@@ -164,6 +228,9 @@ Subsitutir palavas:
 Redirecionar saida padrão para um arquivo:
 > cat alunos3.txt > alunos-temp.txt  
 > date > alunos-temp.txt  
+
+
+
 
 
 
