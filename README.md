@@ -230,7 +230,17 @@ Redirecionar saida padrão para um arquivo:
 > date > alunos-temp.txt  
   
 Concatenar no final do arquivo:  
-> date >> alunos-temp.txt
+> date >> alunos-temp.txt  
+
+Jogar log para limbo do shell:  
+> ls -l alunos.txt2 2> /dev/null  
+  
+Redirecionamento de entrada:  
+> tr 'a' 'Z' < alunos.txt  
+  
+É igual a:  
+> cat alunos.txt | tr a Z  
+
 
 
 
