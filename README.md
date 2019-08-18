@@ -273,6 +273,16 @@ ou:
 > echo $MINHADATA  
 
 
+Uso de aspas em Shell:  
+
+Listagem de todos os arquivos do diretório atual:  
+> echo *   
+
+Protege o commando * com aspas:  
+> echo "*"  
+> echo '*'
+> echo /*  
+
 
   
 
