@@ -282,7 +282,9 @@ Protege o commando * com aspas:
 > echo "*"  
 > echo '*'
 > echo /*  
-
+  
+  
+#### FILE GLOBING x REGEX  
 
   
 
