@@ -244,7 +244,7 @@ Redirecionamento de entrada:
   
 #### VARIAVEIS DE AMBIENTE  
   
-Variaveis de ambiente:  
+Variaveis de ambiente. Env só conhece variáveis exportadas:  
 > env |less  
 > set |less
 
@@ -257,9 +257,24 @@ Declarar variável:
 > echo $VARIAVEL1  
 > echo $VARIAVEL2  
 
+Exportar variável:  
+> VAR1="eita"  
+> export VAR1  
+  
 Pid do bash:  
 > echo $$  
 > ps axu | grep bash  
+  
+Comando em variável:  
+> LIST=`ls -la`  
+> echo $LIST  
+ou:  
+> MINHADATA=$(date)  
+> echo $MINHADATA  
+
+
+
+  
 
 
 
