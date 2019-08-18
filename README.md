@@ -245,7 +245,24 @@ Redirecionamento de entrada:
 #### VARIAVEIS DE AMBIENTE  
   
 Variaveis de ambiente:  
-> env |less
+> env |less  
+> set |less
+
+Imprimir determinada variavel:
+> echo $HOME  
+  
+Declarar variável:  
+> VARIAVEL1=variavel
+> VARIAVEL2="variavel 2 teste"  
+> echo $VARIAVEL1  
+> echo $VARIAVEL2  
+
+Pid do bash:  
+> echo $$  
+> ps axu | grep bash  
+
+
+
 
 
 
