@@ -1,0 +1,9 @@
+:wq - save and exit  
+:1 - go to first line
+:$ - go to last line  
+:!ls /tmp - execute command in bash and return to vi  
+dd - cuts the current line  
+d5d - cuts five lines   
+p - paste the line  
+yy - copy the current line  
+
