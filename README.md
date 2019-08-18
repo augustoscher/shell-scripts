@@ -240,8 +240,12 @@ Redirecionamento de entrada:
   
 É igual a:  
 > cat alunos.txt | tr a Z  
-
-
+  
+  
+#### VARIAVEIS DE AMBIENTE  
+  
+Variaveis de ambiente:  
+> env |less
 
 
 
