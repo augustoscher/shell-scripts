@@ -284,13 +284,27 @@ Protege o commando * com aspas:
 > echo /*  
   
   
-#### FILE GLOBING x REGEX  
+#### REGEX  
 
+egrep: extended regex - grep with regular expressions  
   
+Procurar a palavra Linux com egrep:  
+> egrep Linux texto.txt  
+  
+Procura algo começando com b + [aei] + g:  
+> egrep "b[aei]g" texto.txt  
+  
+Procura algo começando com b + [a-o] + g:  
+> egrep "b[a-o]g" texto.txt  
 
+Procura texto onde a primeira palavra seja Linux:    
+> egrep "^Linux" texto.txt  
 
+Procura texto com b + [a-i] + g* onde g pode ou nao existir:    
+> egrep "b[a-i]g*" texto.txt  
 
-
+Procura texto com b + [a-i] + g+ onde g deve aparecer pelo menos 1x:  
+> egrep "b[a-i]g+" texto.txt  
 
 
 
