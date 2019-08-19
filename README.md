@@ -306,7 +306,11 @@ Procura texto com b + [a-i] + g* onde g pode ou nao existir:
 Procura texto com b + [a-i] + g+ onde g deve aparecer pelo menos 1x:  
 > egrep "b[a-i]g+" texto.txt  
 
+Procura texto com "O" + qqer coisa + "Linux":  
+> egrep "O.Linux" texto.txt  
 
+Procura o caracter ponto (não utiliza como parte do regex):  
+> egrep "[Ll]inux\." texto.txt  
 
 
   
