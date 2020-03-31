@@ -8,13 +8,15 @@ Exibe qual shell está sendo usado:
 Exibe shell disponíveis:  
 > cat /etc/shells  
 
-Setar shell padrão:  
+Setar shell padrão:
+
 > chsh -s $(which zsh) 
 
 Permissão de executável para .sh:  
 > chmod +x /path/to/yourscript.sh   
   
-an interface to the on-line reference manuals:  
+an interface to the on-line reference manuals:
+
 > man chmod  
 > man cat    
   
@@ -53,6 +55,7 @@ Cat de tras pra frente:
 
 
 ##### TAIL/HEAD
+
 Mostra as ultimas linhas de um arquivo:  
 > tail heroku.yml
 > tail -n 2 heroku.yml  
@@ -60,6 +63,10 @@ Mostra as ultimas linhas de um arquivo:
 Mostra as primeiras linhas de um arquivo:  
 > head arquivo.txt
 > head -n 4 test.txt
+
+Stream do arquivo de log:
+
+> tail -f arquivo.log
 
 ##### WC
 Contar tamanho de linhas/palavras/caracteres:  
